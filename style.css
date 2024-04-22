@@ -27,6 +27,15 @@ ul li{
 a{
     text-decoration: none;
 }
+
+.btn-primary{
+    background-color: #AD0419;
+}
+
+.btn-primary:hover{
+    background-color: #581E25;
+}
+
 @media (min-width: 768px) {
   .flex-md-equal > * {
     flex: 1;
