@@ -1,24 +1,137 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" class="h-100" data-bs-theme="auto">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Mr. Robot</title>
+
+    <link
+      href="node_modules\bootstrap\dist\css\bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column h-100">
     <header>
-      <div>
-        <a href="index.html"><img src="logo.png" alt="logo image" /></a>
-      </div>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="images/logo.svg" alt="logo" width="250" height="50"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <nav>
-      <a href="index.html">Mr. Robot</a>
-      <a href="mvo.html">Misión</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="contacto.html">Contactanos</a>
-    </nav>
+
     <main>
-      <div class="datos">
+        <div class=" d-flex w-100 pt-5 mt-5 justify-content-center">
+          <h2 class="display-5 py-3">¡Contáctanos!</h2>
+        </div>
+        <div class="text-bg-dark d-flex w-100 justify-content-center text-start">
+          <div class="w-50 ">
+            <form class="">
+              <label class="lead m-2">Nombre: </label>
+              <input type="name" class="form-control" placeholder="Nombre"/>
+              <label class="lead m-2">Empresa: </label>
+              <input type="company" class="form-control" placeholder="Empresa"/>
+              <label class="lead m-2">Correo Electrónico: </label>
+              <input type="email" class="form-control" placeholder="tucorreo@ejemplo.com"/>
+              <label class="lead m-2">Motivo de la consulta: </label>
+              <textarea class="form-control" rows="4"></textarea>
+              <button type="button" class="btn btn-primary btn-block my-4">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="bg-body-tertiary d-flex w-100 pt-2 justify-content-center">
+          <h3 class="display-5 py-3">Sobre nosotros</h3>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100">
+          <div
+            class="px-3 pt-md-3 px-md-5 text-center overflow-hidden item"
+          >
+            <div>
+              <img
+                src="images/pin.png"
+                alt="technician repairing a motherboard"
+                width="25%"
+              />
+            </div>
+
+            <div class="mt-3">
+              <h3>Oficina Microcentro</h3>
+              <p class="lead">
+                Nuestra oficina está convenientemente ubicada en <br>Av. Córdoba 550, CABA.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-body-tertiary px-3 pt-md-3 px-md-5 text-center overflow-hidden"
+          >
+            <div>
+              <img src="images/whatsapp.svg" alt="five hearts icon" width="25%" />
+            </div>
+
+            <div class="mt-3">
+              <h3>Teléfono</h3>
+              <p class="lead">
+                Atendemos llamados de Lunes a Viernes de 9 a 18hs
+                <br>
+                <a href="tel:+541103034566">+54 11 0303 4566</a>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="px-3 pt-md-3 px-md-5 text-center overflow-hidden"
+          >
+            <div>
+              <img src="images/email.svg" alt="five stars icon" width="25%" />
+            </div>
+
+            <div class="mt-3">
+              <h3>Correo electrónico</h3>
+              <p class="lead">
+                Contactarnos fácilmente a través de nuestro correo electrónico 
+                <br>
+                <a href="mailto:youremail@example.com">contacto@mrrobot.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+      <div class="container">
+        <span class="text-body-secondary">© 2024 Mr. Robot</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- <div class="datos">
         <h2>Sobre Nosotros</h2>
         <b>¿Dónde estamos?</b>
         <br />
@@ -31,25 +144,4 @@
         <b>Escribinos</b>
         <br />
         contacto@mrrobot.com
-      </div>
-      <div class="contacto">
-        <h2>Dejanos tu mensaje</h2>
-        <form action="#" method="POST">
-          <label for="nombre">Nombre:</label><br />
-          <input type="text" id="nombre" name="nombre" required /><br /><br />
-
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
-
-          <label for="mensaje">Mensaje:</label><br />
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea
-          ><br /><br />
-
-          <input type="submit" value="Enviar" />
-        </form>
-      </div>
-    </main>
-    <br>
-    <footer>MR ROBOT ALL RIGHTS RESERVED</footer>
-  </body>
-</html>
+      </div> -->
