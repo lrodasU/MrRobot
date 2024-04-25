@@ -36,6 +36,10 @@ a{
     background-color: #581E25;
 }
 
+.navbar-brand img{
+  margin-left: 5px;
+}
+
 @media (min-width: 768px) {
   .flex-md-equal > * {
     flex: 1;
